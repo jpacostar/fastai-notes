@@ -14,8 +14,8 @@ I followed all the steps in the [lesson 2 video](https://youtu.be/JNxcznsrRb8?t=
 
 For setting up an AWS server, see the video of [lesson 2](http://course.fast.ai/lessons/lesson2.html) at 2:00:00.
 
-1. From the GDR Computer, the private key is at C:\cygwin64\home\ANALISTA\.ssh.
 1. Go to EC2 > launch instance > Community AMIs > search for `fastai`.
+1. From a windows computer, save the private key (.pem file you downloaded from AWS) at C:\cygwin64\home\<username>\\.ssh.
 1. Select **fastai-part1v2-p2** (prices [here](https://aws.amazon.com/ec2/pricing/)).
 1. Filter by **GPU Compute** and select the **p2.xlarge**. Click on **Review and Launch**.
 1. Select key pair from first step. Click **Launch**.
