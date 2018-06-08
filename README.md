@@ -7,7 +7,7 @@ This are my notes while following the [fast.ai](http://course.fast.ai/index.html
 
 I started the course towards the end of may 2018.  Right at the end of lesson 1, and eager to try by myself to the dogs-vs-cats classifier, I registered in Paperspace and tried to create a new machine with the fast.ai public template.  However, a message appeared stating that _This instance type has not been enabled in your account yet_.  I filled the request and, three weeks later, haven't heard back.  I also tried the free hour in Crestle, but decided to follow the recomendations towards the end of lesson 2 and try Amazon Web Services (AWS). 
 
-I followed all the steps in the [lesson 2 video](https://youtu.be/JNxcznsrRb8?t=1h57m19s), but when I ran the notebook on an instance of the fast.ai AMI, `torch.cuda.is_available()` returned `False`.  Then, I found this [post](See http://forums.fast.ai/t/torch-cuda-is-available-returns-false/16721/), in which the author finally decides to use the Amazon Deep Learning AMI (see [here](https://aws.amazon.com/blogs/machine-learning/get-started-with-deep-learning-using-the-aws-deep-learning-ami/) for the basic part of the setup).
+I followed all the steps in the [lesson 2 video](https://youtu.be/JNxcznsrRb8?t=1h57m19s), but when I ran the notebook on an instance of the fast.ai AMI, `torch.cuda.is_available()` returned `False`.  Then, I found this [post](http://forums.fast.ai/t/torch-cuda-is-available-returns-false/16721/), in which the author finally decides to use the Amazon Deep Learning AMI (see [here](https://aws.amazon.com/blogs/machine-learning/get-started-with-deep-learning-using-the-aws-deep-learning-ami/) for the basic part of the setup).
 
 
 ## 1. AWS
