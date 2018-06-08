@@ -95,7 +95,7 @@ ssh -L localhost:8888:localhost:8888 -i <your .pem file name> ubuntu@<Your insta
     ln -sf ~/fastai/fastai
 ```
 
-## Kaggle
+## 2. Kaggle
 
 See the official [kaggle API](https://github.com/Kaggle/kaggle-api) or the [kaggle-cli](https://github.com/floydwch/kaggle-cli).
 
@@ -133,7 +133,7 @@ With the `kaggle-cli`:
     mv train/cats/cat.6* valid/cats/
 ```
 
-## Git
+## 3. Git
 
 To clone the repository:
 
