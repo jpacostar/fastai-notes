@@ -141,6 +141,7 @@ With the `kaggle-cli`:
     kg download -f test_v2_file_mapping.csv.zip
     kg download -f train-jpg.tar.7z
     kg download -f train_v2.csv.zip
+    kg download -f sample_submission_v2.csv.zip
     
     sudo apt install p7zip-full
     
