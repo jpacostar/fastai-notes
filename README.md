@@ -90,7 +90,8 @@ ssh -L localhost:8888:localhost:8888 -i <your .pem file name> ubuntu@<Your insta
 # from ~/home (~)
     mkdir data
     ln -s ~/data ln fastai-notes/
-
+    ln -s ~/fastai/courses/dl1/planet.py ln ~/fastai-notes/
+    
 # from ~/fastai-notes
     ln -sf ~/fastai/fastai
 ```
