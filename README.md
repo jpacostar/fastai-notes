@@ -131,6 +131,22 @@ With the `kaggle-cli`:
     mkdir valid/cats
     mv train/dogs/dog.4* valid/dogs/
     mv train/cats/cat.6* valid/cats/
+    
+    
+    mkdir planet
+    cd planet
+    kg config -u <...> -p <...> -c planet-understanding-the-amazon-from-space 
+    kg download -f test-jpg-additional.tar.7z
+    kg download -f test-jpg.tar.7z
+    kg download -f test_v2_file_mapping.csv.zip
+    kg download -f train-jpg.tar.7z
+    kg download -f train_v2.csv.zip
+    
+    sudo apt install p7zip-full
+    
+    7za x test-jpg-additional.tar.7z
+    tar xf test-jpg-additional.tar
+    ...
 ```
 
 ## 3. Git
