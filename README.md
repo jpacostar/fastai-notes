@@ -9,8 +9,7 @@ I started the course towards the end of may 2018.  Right at the end of lesson 1,
 
 I followed all the steps in the [lesson 2 video](https://youtu.be/JNxcznsrRb8?t=1h57m19s), but when I ran the notebook on an instance of the fast.ai AMI, `torch.cuda.is_available()` returned `False`.  Then, I found this [post](http://forums.fast.ai/t/torch-cuda-is-available-returns-false/16721/), in which the author finally decides to use the Amazon Deep Learning AMI (see [here](https://aws.amazon.com/blogs/machine-learning/get-started-with-deep-learning-using-the-aws-deep-learning-ami/) for the basic part of the setup).
 
-
-## 1. AWS
+## AWS
 
 For setting up an AWS server, see the video of [lesson 2](http://course.fast.ai/lessons/lesson2.html) at 2:00:00.
 
@@ -96,7 +95,14 @@ ssh -L localhost:8888:localhost:8888 -i <your .pem file name> ubuntu@<Your insta
     ln -sf ~/fastai/fastai
 ```
 
-## 2. Kaggle
+
+## Paperspace
+
+To connect:
+
+* `ssh paperspace@<public ip> -L localhost:8888:localhost:8888`
+
+## Kaggle
 
 See the official [kaggle API](https://github.com/Kaggle/kaggle-api) or the [kaggle-cli](https://github.com/floydwch/kaggle-cli).
 
@@ -149,6 +155,12 @@ With the `kaggle-cli`:
     7za x test-jpg-additional.tar.7z
     tar xf test-jpg-additional.tar
     ...
+    
+    
+    mkdir aclImdb
+    wget http://files.fast.ai/data/aclImdb.tgz
+    tar -xvzf aclImdb.tgz
+    
 ```
 
 ## 3. Git
