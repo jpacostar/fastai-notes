@@ -163,7 +163,7 @@ With the `kaggle-cli`:
     
 ```
 
-## 3. Git
+## Git
 
 To clone the repository:
 
@@ -176,3 +176,7 @@ To add files:
 1. `git add <files>`
 1. `git commit <file> -m <commit notes>`
 1. `git push https://github.com/jpacostar/fastai-notes.git master`
+
+## Usefull links
+
+* https://www.lifewire.com/linux-terminal-commands-rock-your-world-2201165. See the `nohup` command.
