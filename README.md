@@ -93,6 +93,21 @@ ssh -L localhost:8888:localhost:8888 -i <your .pem file name> ubuntu@<Your insta
     
 # from ~/fastai-notes
     ln -sf ~/fastai/fastai
+    
+# from ~/data
+    mkdir cifar10
+    wget ...
+    tar -xvzf cifar10.tgz
+    ...
+    cd train && find . | grep -o [a-z]*.png | sort -u && cd .
+    
+    # See http://forums.fast.ai/t/not-a-directory-error-in-cifar10-exercise/13401/5
+    mkdir train_ test_
+    cd train_
+    mkdir airplane automobile bird cat deer dog frog horse ship truck
+    cd ..
+    function copytrain { for arg in $@; do cp $(find train -name '*'$arg'.png') train_/$arg/; done; };
+    copytrain $(ls train_ | grep -o "[a-z]*")
 ```
 
 
